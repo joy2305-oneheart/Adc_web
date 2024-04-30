@@ -8,7 +8,7 @@ const Slider = () => {
   // Array to hold card data for 10 iterations
   const cardData = Array.from({ length: 10 }).map((_, index) => ({
     key: index,
-    imageUrl: "src/assets/images/Image1.jpg",
+    imageUrl: "public/images/Image1.jpg",
     title: "Worship",
     description: "We believe in worshiping God with all our heart and in truth and spirit for who he is..."
   }));
