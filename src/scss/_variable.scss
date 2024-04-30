@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@400;500;600;700&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+$adc-primary-font:'Comfortaa', sans-serif;
+$adc-secondary-font:'Anton', sans-serif;
+$adc-tertory-font:'Poppins', sans-serif;
+$adc-primary-color:rgb(212, 56, 56);
+$adc-secondary-color:#fff;
+$adc-tertiary-color:#000;
+.section-padding{
+    padding-top: clamp(1.5rem, 0.8182rem + 3.6364vw, 4rem);
+    padding-bottom: clamp(1.5rem, 0.8182rem + 3.6364vw, 4rem); 
+}
+.adc-border-radius{
+    border-radius: 15px;
+}
+.adc-btn{
+    padding: 5px 12px;
+    font-size: 13px;
+    background-color: $adc-secondary-color !important;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid transparent  !important;
+    position: relative;
+}
+.adc-btn::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color:$adc-tertiary-color;
+    z-index: -1;
+    transition: .5s;
+    inset: 0;
+}
+.adc-btn:hover{
+    color: $adc-tertiary-color;
+    border-color: $adc-tertiary-color;
+}
+h1 , .h1{
+    font-family: $adc-primary-font;
+}
+h2 , .h2{
+    font-family: $adc-tertory-font;
+    font-weight: 900;
+}
+h1 span, .h1 span
+h2 span .h2 span{
+    font-family: $adc-tertory-font;
+    color: $adc-primary-color;
+}
+p{
+    font-family:$adc-primary-font;
+    font-size: clamp(.875rem, 0.9318rem + 0.3636vw, 1rem);
+}
+span{
+    display: inline-block;
+}
+button:focus{
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.adc-bold{
+    font-weight: 700;
+}
+.color-black{
+    color: $adc-tertiary-color;
+}
+.padding-tb{
+    padding: clamp(2rem, 0.6364rem + 7.2727vw, 7rem) 0;
+}
+.card-prop{
+    border-radius: 15px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    
+}
+.card-prop{
+    transition: all ease-in-out 0.3s;
+    img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        scale: 1;
+    }
+}
+.card-prop:hover{
+    transition: all ease-in-out 0.3s;
+    scale: 1.05;
+}

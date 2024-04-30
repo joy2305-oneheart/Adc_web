@@ -1,0 +1,8 @@
+.react-multi-carousel-track {
+    gap: 2rem;
+}
+.react-multi-carousel-list.container{
+    max-width: 100%;
+    padding-top: clamp(1.5rem, 0.8182rem + 10.6364vw, 14rem);
+    padding-bottom: clamp(1.5rem, 0.8182rem + 3.6364vw, 4rem);
+} 
